@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>🌻🌻Quieres ser mi San Valentín🌻🌻</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden; /* Evitar desplazamiento horizontal */
+            background-color: crimson; /* Color de fondo rojo para ocupar toda la pantalla */
+            height: 100vh; /* Altura del 100% de la ventana */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .body {
+            text-align: center;
+            position: relative;
+        }
+
+        .body__title {
+            color: white;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .body__img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 20px;
+            margin-top: 20px;
+        }
+
+        .body__buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .body__button {
+            background-color: #252c26;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.5em;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 10px;
+            position: absolute;
+        }
+
+        .body__button:hover {
+            background-color: #25dd8a;
+        }
+
+        #No {
+            animation: moveButton 1s infinite; /* Agregamos una animación */
+        }
+
+        @keyframes moveButton {
+            0% {
+                top: 0;
+                left: 0;
+            }
+            25% {
+                top: 0;
+                left: 75%;
+            }
+            50% {
+                top: 75%;
+                left: 75%;
+            }
+            75% {
+                top: 75%;
+                left: 0;
+            }
+            100% {
+                top: 0;
+                left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="body">  
+        <h1 class="body__title">🌻🌻Quieres ser mi San Valentín🌻🌻</h1>
+        <img src="https://1.bp.blogspot.com/-RpRAxTWBa0w/YClreE6rVSI/AAAAAAAAovw/MN3im10MS9c63WqSieBvsxXnjUdFpbmAQCLcBGAsYHQ/s993/20%2Bgatitos%2Bcon%2Bcorazones%2Bpara%2Bcompartir%2Beste%2Bd%25C3%25ADa%2Bde%2BSan%2BValent%25C3%25ADn.jpg" alt="Fotito de gatito" class="body__img"/> 
+        <div class="body__buttons">
+            <button id="Yes" class="body__button">🥰Si🥰</button>
+            <button id="No" class="body__button">🥺No ahi nomas joven🥺</button>
+        </div>
+    </div>
+     
+    <script>
+        const botonSi = document.getElementById('Yes');
+        const botonNo = document.getElementById('No');
+
+        const acepto = () => {
+            alert('Ya aceptaste ya, aunque no sé si vamo a salir pero ya eres mi san valentín jejeje😆😆');
+            alert('Osea sí vamo a salir pero otro día ps, igual la pasamos como si fuera el 14, la cosa es pasarla con usted💘💘');
+            alert('Viene canción para usted xd (espero que no le salga anuncios)---->');
+            location.href = 'https://www.youtube.com/watch?v=CFcY_GG_yU0=1s';
+        }
+
+        botonSi.addEventListener('click', acepto);
+    </script>
+</body>
+</html>

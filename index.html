@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>🌻🌻Quieres ser mi San Valentin🌻🌻</title>
+    <style>
+     .body{
+        background-color: crimson;
+        text-align: center;
+     }
+
+     .body__title{
+        color: white;
+     }
+
+     .body__img{
+      
+       max-width: 120%;
+      height: auto;
+      border-radius: 20px; /* Bordes redondeados */
+      margin-top: 50px; /* Espaciado superior */
+        
+     }
+
+     .body__button{
+      background-color: #252c26; /* Color de fondo verde */
+      color: white; /* Color del texto */
+
+    
+
+     }
+    </style>   
+
+</head>
+<body class="body">  
+     <h1 class="body__title">🌻🌻Quieres ser mi San Valentin🌻🌻</h1>
+     <img
+      src="https://1.bp.blogspot.com/-RpRAxTWBa0w/YClreE6rVSI/AAAAAAAAovw/MN3im10MS9c63WqSieBvsxXnjUdFpbmAQCLcBGAsYHQ/s993/20%2Bgatitos%2Bcon%2Bcorazones%2Bpara%2Bcompartir%2Beste%2Bd%25C3%25ADa%2Bde%2BSan%2BValent%25C3%25ADn.jpg" 
+     alt="Fotito de gatito" class="body__img"/> 
+     <button id="Yes">🥰Si🥰</button>
+     <button id="No">🥺No ahi nomas joven🥺</button> 
+     
+     
+     <script>
+      const vutonSi = document.getElementById('Yes');
+      const vutonNo = document.getElementById('No');
+
+      const acepto = () => {
+        alert('Ya aceptaste ya, aunque no se si vamo a salir pero ya eres mi san valentin jejeje😆😆');
+        alert('Osea si vamo a salir pero otro dia ps, igual la pasamos como si fuera el 14, la cosa es pasarla con usted💘💘');
+        alert('viene cancioncita de mi pa usted xd(espero que no le salga anuncios)---->');
+        location.href = 'https://www.youtube.com/watch?v=CFcY_GG_yU0=1s';
+      }
+
+      const evitarkcrompamibobo = () => {
+        vutonNo.style.position = 'absolute';
+        vutonNo.style.top = (Math.random() * window.innerHeight) +'px';
+        vutonNo.style.left = (Math.random() * window.innerWidth) + 'px';
+      }
+
+      vutonSi.addEventListener('click', acepto);
+      vutonNo.addEventListener('mouseover', evitarkcrompamibobo );   
+     </script>
+
+    </body>
+
+</html>
